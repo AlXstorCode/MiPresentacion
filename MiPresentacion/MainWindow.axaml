@@ -7,7 +7,7 @@
         x:Class="MiPresentacion.MainWindow"
         
         Title="MiPresentacion">
-    <StackPanel Margin="10" Spacing="20" Width="270" HorizontalAlignment="Left">
+    <StackPanel Margin="10" Spacing="20" Width="300" HorizontalAlignment="Center">
         
         <TextBlock Text="Mi primera aplicación gráfica" FontSize="20"/>
         <TextBox x:Name="txtNombre" PlaceholderText="Nombre"/>
@@ -15,9 +15,9 @@
         <TextBox x:Name="txtEdad" PlaceholderText="Edad"/>
 
        <StackPanel Orientation="Horizontal" Spacing="10">
-            <Button x:Name="btnPresentar" Content="Presentarme"/>
+            <Button x:Name="btnPresentar" Content="Presentarme" Click="BtnPresentar_Click"/>
             <Button x:Name="btnLimpiar" Content="Limpiar"/>
         </StackPanel>
-        <TextBlock x:Name="blResultado" Text="Completa el formulario y preciona Presentarme" FontSize="16" TextWrapping="Wrap"/>
+        <TextBlock x:Name="blResultado" Text="Completa el formulario y presiona Presentarme" FontSize="16" TextWrapping="Wrap"/>
     </StackPanel>
 </Window>
