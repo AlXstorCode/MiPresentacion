@@ -3,7 +3,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+
         x:Class="MiPresentacion.MainWindow"
+        
         Title="MiPresentacion">
-    Welcome to Avalonia!
+    <StackPanel Margin="10" Spacing="20" Width="270" HorizontalAlignment="Left">
+        
+        <TextBlock Text="Mi primera aplicación gráfica" FontSize="20"/>
+        <TextBox x:Name="txtNombre" PlaceholderText="Nombre"/>
+        <TextBox x:Name="txtApellido" PlaceholderText="Apellido"/>
+        <TextBox x:Name="txtEdad" PlaceholderText="Edad"/>
+
+       <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button x:Name="btnPresentar" Content="Presentarme"/>
+            <Button x:Name="btnLimpiar" Content="Limpiar"/>
+        </StackPanel>
+        <TextBlock x:Name="blResultado" Text="Completa el formulario y preciona Presentarme" FontSize="16" TextWrapping="Wrap"/>
+    </StackPanel>
 </Window>
