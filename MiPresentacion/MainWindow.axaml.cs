@@ -5,15 +5,18 @@ namespace MiPresentacion;
 
 public partial class MainWindow : Window
 {
+    private string? mensajeInicial;
+
     public MainWindow()
     {
         InitializeComponent();
+        mensajeInicial = blResultado.Text;
     }
 
     private void BtnPresentar_Click(object? sender, RoutedEventArgs e)
     {
-        string nombre = txtNombre.Text.Trim();
-        string apellido = txtApellido.Text.Trim();
+        string nombre = txtNombre.Text?.Trim() ?? "";
+        string apellido = txtApellido.Text?.Trim() ?? "";
 
         if (string.IsNullOrWhiteSpace(nombre))
         {
@@ -27,7 +30,7 @@ public partial class MainWindow : Window
         }
         if (!int.TryParse(txtEdad.Text, out int edad))
         {
-            blResultado.Text = "Por favor, ingresa una edad numérica valida.";
+            blResultado.Text = "Por favor, ingresa una edad numérica válida.";
             return;
         }
         if (edad <= 0)
@@ -36,5 +39,14 @@ public partial class MainWindow : Window
             return;
         }
         blResultado.Text = $"¡Hola! Mi nombre es {nombre} {apellido}, tengo {edad} años y estoy aprendiendo a desarrollar interfaces gráficas con C#.";
+    }
+
+    private void BtnLimpiar_Click(object? sender, RoutedEventArgs e)
+    {
+        txtNombre.Text = "";
+        txtApellido.Text = "";
+        txtEdad.Text = "";
+        blResultado.Text = mensajeInicial;
+        txtNombre.Focus();
     }
 }

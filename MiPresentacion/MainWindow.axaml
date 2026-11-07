@@ -16,7 +16,7 @@
 
        <StackPanel Orientation="Horizontal" Spacing="10">
             <Button x:Name="btnPresentar" Content="Presentarme" Click="BtnPresentar_Click"/>
-            <Button x:Name="btnLimpiar" Content="Limpiar"/>
+            <Button x:Name="btnLimpiar" Content="Limpiar" Click="BtnLimpiar_Click"/>
         </StackPanel>
         <TextBlock x:Name="blResultado" Text="Completa el formulario y presiona Presentarme" FontSize="16" TextWrapping="Wrap"/>
     </StackPanel>
