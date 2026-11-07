@@ -7,7 +7,7 @@
         x:Class="MiPresentacion.MainWindow"
         
         Title="MiPresentacion">
-    <StackPanel Margin="10" Spacing="20" Width="300" HorizontalAlignment="Center">
+    <StackPanel Margin="10" Spacing="20" Width="311" HorizontalAlignment="Center">
         
         <TextBlock Text="Mi primera aplicación gráfica" FontSize="20"/>
         <TextBox x:Name="txtNombre" PlaceholderText="Nombre"/>

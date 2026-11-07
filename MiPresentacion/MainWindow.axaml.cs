@@ -52,11 +52,11 @@ public partial class MainWindow : Window
         }
         if (esAlternativo)
         {
-            blResultado.Text = $"¡Hola! Mi nombre es {nombre} {apellido}, tengo {edad} años y estoy aprendiendo a desarrollar interfaces gráficas con C#.";
+            blResultado.Text = $"Mi nombre es {nombre} {apellido}. Tengo {edad} años. No fumo, solo bebo ocasionalmente y me acuesto a las 11 de la noche… pero hoy me desvelé programando en C#.";
         }
         else
         {
-            blResultado.Text = $"Mi nombre es {nombre} {apellido}. Tengo {edad} años. No fumo, solo bebo ocasionalmente y me acuesto a las 11 de la noche… pero hoy me desvelé programando en C#.";
+            blResultado.Text = $"¡Hola! Mi nombre es {nombre} {apellido}, tengo {edad} años y estoy aprendiendo a desarrollar interfaces gráficas con C#.";
         }
     }
 
